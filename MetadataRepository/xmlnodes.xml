@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    xmlnodes
+  </Name>
+  <Title>
+    XmlNodesh  Nodes that represent parts of an XML document            
+  </Title>
+  <Description>
+    Module Operations
+  
+  Provides an XmlNode class that holds a finite number of pointers
+  to child nodes and a visitation predicate 
+ 
+  Note if you accidentally attempt to make a node a child of itself
+  than addChildpChild throws an exception
+  
+  Build Process
+  
+  cl DTESTXMLNODES XmlNodescpp
+  
+  Maintenance History
+  
+  ver    Apr 
+   Extracted interface IXmlNode in IXmlDocumenth
+   Provided XmlNodeFactory in XmlDocumentFactoriescpp
+   small refactoring and code changes to support use of interface
+  ver    Mar 
+   added check in XmlProcInstrNodeaddAttribute for invalid attribute
+  ver    Mar 
+   Changed XmlElementNodeToString and XmlElementNodeToEndString
+    to keep selfclosing tags selfclosed  Version  expanded them to
+    correct but not selfclosed elements
+  ver    Feb 
+   added several new member functions needed to satisfy requirements of
+    Project 
+  ver    Feb 
+   created XmlNode Hierarchy
+    XmlNode XmlTextNode XmlCommentNode XmlProcInstrNode XmlElementNode
+   added functionality specific to each type
+   added copy construction and assignment
+  ver    Jan 
+   first release
+ 
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\XmlNodes.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\XmlNodes.cpp
+  </Source>
+  <DepPackage>
+    ixmldocument
+  </DepPackage>
+</Package>

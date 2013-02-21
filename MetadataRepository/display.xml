@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    display
+  </Name>
+  <Title>
+    Display class responsible for handling Xml Metadata Output
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module will be responsible for handling the output of the XML MetadataManager Multiple modules 
+  will call the methods to print the data in a formatted manner The external modules will be passing 
+  the Package data or the list of files based on the function requirement and the Display module will
+  format the output and display on screen No processing carried out for the data in this module
+
+  Public Interface
+  
+  
+  Display dp      Create Object
+  PrintScanPackagePackage              Print formatted data for Scanned Package object
+  PrintFilesstdvectorstdstring   Print formatted list of files
+  PrintRepositoryLocation          Print formatted repository location
+  GeneratingXMLMessage  Print message for Generating XML
+  CompletedXMLMessageint               Print message for All Completed XML
+  PrintAnalyzedPackagePackage          Print formatted data for Analyzed Package object
+
+  Build Process
+  
+  
+  Required files
+
+     Displayh Displaycpp Packageh Packagecpp
+     WinToolshwintoolscpp fileInfoh fileInfocpp
+ StringConversionshStringConversionscpp
+  
+  Build commands  Can be used directly copying from here 
+
+     cl EHsc DTESTDISPLAY Displaycpp WinToolscpp 
+Packagecpp fileInfocpp
+ 
+  Maintenance History
+  
+  ver    Mar 
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\Display.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\Display.cpp
+  </Source>
+  <DepPackage>
+    package
+  </DepPackage>
+  <DepPackage>
+    wintools
+  </DepPackage>
+</Package>

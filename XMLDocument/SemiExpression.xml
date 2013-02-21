@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    SemiExpression
+  </Name>
+  <Title>
+    Collects tokens for code analysis
+  </Title>
+  <Description>
+    N-A
+  </Description>
+  <Header>
+    N-A
+  </Header>
+  <Source>
+    N-A
+  </Source>
+</Package>

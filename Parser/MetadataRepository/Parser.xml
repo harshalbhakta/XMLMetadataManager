@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    Parser
+  </Name>
+  <Title>
+    N-A
+  </Title>
+  <Header>
+    N-A
+  </Header>
+  <Source>
+    N-A
+  </Source>
+  <DepPackage>
+    Tokenizer
+  </DepPackage>
+  <DepPackage>
+    SemiExpression
+  </DepPackage>
+  <DepPackage>
+    ActionsAndRules
+  </DepPackage>
+  <DepPackage>
+    ConfigureParser
+  </DepPackage>
+</Package>

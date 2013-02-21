@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    StringConversion
+  </Name>
+  <Title>
+    Win APIbased helper functions
+  </Title>
+  <Description>
+    Module StringConversion Operations
+    
+    This module defines
+      typedefs stdStr stdChar stdOstream stdOstringstream
+      macros   stdOut compare AM PM and a few message strings
+
+    This module also defines the class Convert with static members
+      stdwstring ToWstringconst stdstring src
+      stdwstring ToWstringconst stdwstring src
+      stdstring ToStringconst stdstring src
+      stdstring ToStringconst stdwstring src
+      stdStr ToStdStrconst stdstring src
+      stdStr ToStdStrconst stdwstring src
+
+    The idea is to accept either ascii or unicode strings and convert
+    them to one of three specific types stdstring stdwstring or
+    stdStr
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\StringConversion.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\StringConversion.cpp
+  </Source>
+</Package>

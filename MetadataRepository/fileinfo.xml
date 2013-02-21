@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    fileinfo
+  </Name>
+  <Title>
+    fileInfoh    manage file information extracted from Win API  
+  </Title>
+  <Description/>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\Fileinfo.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\Fileinfo.cpp
+  </Source>
+  <DepPackage>
+    stringconversion
+  </DepPackage>
+</Package>

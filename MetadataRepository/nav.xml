@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    nav
+  </Name>
+  <Title>
+    navh        recursively walk a directory tree           
+  </Title>
+  <Description/>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\Nav.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\Nav.cpp
+  </Source>
+  <DepPackage>
+    stringconversion
+  </DepPackage>
+  <DepPackage>
+    fileinfo
+  </DepPackage>
+  <DepPackage>
+    wintools
+  </DepPackage>
+  <DepPackage>
+    conio
+  </DepPackage>
+</Package>

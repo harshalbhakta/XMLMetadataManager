@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    Package
+  </Name>
+  <Title>
+    Class to hold information about each package  h  cpp  file   
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module defines a Package class that will hold the information related to each package
+
+  Part   Function
+  Part   Variable 
+  Part   Control
+
+  This module will basically hold the information related to the above mentioned parts The 
+  statistics related to the analysis of the header and the source files will be stored in
+  the sub modules 
+
+  Function  Holds information related to the functions detected
+
+ Function Name  nooflines  cyclocomplexity  scope  fromline  toline
+
+  Variable  Holds information related to the variables detected
+
+ Variable Name  fromFile  fromLine  toFile  toLine  locreference  refdensity
+
+  Control   Holds informaiton related to the controls detected
+
+ Control Name  breadthControlSpan  scope  fromline  toline
+
+  Public Interface
+  
+  
+  Package pk
+
+  Function fk
+
+  fksetFunctionNameTest
+  fksetNoOfLines
+  fksetDepthOfNesting
+  fksetCycloComplexity
+
+  Variable vb
+
+  vbsetVariableNameLocOfReference
+  vbsetLocReference
+  vbsetRefDensity
+
+  Control ct
+
+  ctsetControlNameFor
+
+  pkaddFunctionfk
+  pkaddControlct
+  pkaddVariablevb
+
+  Build Process
+  
+  Required files
+     Packagecpp
+  Build commands
+     devenv CodeMetricsAnalyzersln rebuild debug
+
+  Maintenance History
+  
+  ver    Feb 
+  
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Package.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Package.cpp
+  </Source>
+</Package>

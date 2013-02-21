@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    cmdlineargs
+  </Name>
+  <Title>
+    CmdLineArgs  Class to handle the operations for command line arguments
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module defines a CmdLineArgs class Its instance will be used to handle
+  command line arguments 
+
+  Usage   Recursively Parse files to create Metadata
+
+  Exactly Once  argv  Recurse Option  r Or nr
+  Exactly Once  argv  File Pattern      Selection criteria to choose file 
+  Atleast Once  argv  Path Spces    Parser  Folder Location 
+ argv     Folder Location 
+ argv     Folder Location 
+ argv     Folder Location 
+ argvN     Folder Location 
+
+ argv To argvN  Folder Path Specifications
+
+  Usage   Scan File
+  
+  Exactly Once  argv  Scan Mode Option  s
+  Exactly Once  argv  Package Name       Top Level Pacakge name for scanning metadata
+  
+  Usage   Modify Pacakge Metadata
+
+  Exactly Once  argv  Modify Option   m
+  Exactly Once  argv  Package Name    Package name to be modified
+  Atleast Once  argv  Dependency   Package name to be added
+ argv    Package name to be added
+ argv    Package name to be added
+ argv    Package name to be added
+ argvN    Package name to be added
+
+ argv To argvN  Folder Path Specifications
+
+  If the criteria above does not match we return error message
+
+  Public Interface
+  
+  
+  CmdLineArgs cla  Create Class Object
+  if  claValidateAndStoreArgsargcargv   Validate and Analyze Arguments
+  clagetFiles  Get vector of files to analyze
+  clagetCurrentMode  Get current mode
+  claprintManual  Print manual describing arguments
+  claisRecurse  Get Recurse Status
+  clagetFilePattern  Get File Patterns entered
+  clagetPathSpecs  Get Path for entered for analysis
+  clagetCurrentMode  Get Current Mode of analysis  Usage 
+
+  Build Process
+  
+  Required files
+    
+ CmdLineArgsh CmdLineArgscpp
+ CustomNavigateh CustomNavigatecpp 
+ WinToolshwintoolscpp fileInfoh fileInfocpp
+ StringConversionshStringConversionscpp
+  
+  Build commands  Can be used directly copying from here 
+    
+ cl EHsc DTESTCMDLINEARGS CmdLineArgscpp 
+CustomNavigatecpp WinToolscpp fileInfocpp
+
+  Maintenance History
+  
+  ver    Mar 
+   Added  options for Modifying XML  Scanning Metadata
+  ver    Feb 
+   First Release
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\CmdLineArgs.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\CmdLineArgs.cpp
+  </Source>
+  <DepPackage>
+    customnavigate
+  </DepPackage>
+</Package>

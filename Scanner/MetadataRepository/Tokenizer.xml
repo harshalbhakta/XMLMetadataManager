@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    Tokenizer
+  </Name>
+  <Title>
+    Reads words from a file
+  </Title>
+  <Description>
+    Module Operations 
+  
+  This module defines a tokenizer class  Its instances read words from 
+  an attached file or string  Word boundaries occur when a character sequence
+  read from the file or string
+   changes between any of the character types alphanumeric punctuator
+    or white space
+   certain characters are treated as single character tokens eg 
+            and n
+    You can change the selection with TokersetModeTokercode or
+    TokersetModeTokerxml or TokersetSingleCharTokenssomestring
+   Tokercode is the default tokenizing mode
+   Double quoted and single quoted strings are returned as single tokens
+    You can turn off collecting single quoted strings as tokens by calling
+    TokerreturnSingleQuotedStringsAsTokensfalse  That is needed if 
+    you are parsing text with single quotes as possessives for example
+  A tokenizer is an important part of a scanner used to read and interpret
+  source code or XML
+
+  Public Interface
+  
+  Toker t                         create tokenizer instance
+  returnComments                request comments return as tokens
+  iftattachsomeFileName       select file for tokenizing
+    string tok  tgetTok       extract first token
+  int numLines  tlines        return number of lines encountered
+  tlines                     reset line count
+
+  Build Process
+  
+  Required files
+     tokenizerh tokenizercpp
+  Build commands either one
+     devenv ProjectHelpSsln
+     cl EHsc DTESTTOKENIZER tokenizercpp link setargvobj
+
+  Maintenance History
+  
+  ver    Feb 
+   TA Mehmet Kaya fixed bug handling many contiguous escape chars
+    reported by Ider Jian Zhang and Harshal Bhakta
+  ver    Feb 
+   added returnSingleQuotedStringAsTokenbool doReturn to support
+    XML parsing where text body has single quotes  Note that if you
+    set as false then single quoted attribute values wont be returned
+    as a single token
+  ver    Jan 
+   made putbackint a public rather than private member function
+  ver    Jan 
+   added TokersetSingleTokenCharssomestring
+   added notes about setMode and setSingleTokenChars to Manual
+    and Maintenance information
+  ver    Jan 
+   added Tokermode either code or xml
+   changed container for single char token ids from vectorchar
+    to string
+   added test for end of file in isTokEnd to fix bug found by
+    Jim DelloStritto that sometimes caused Toker to fail returning
+    last character if not a singleCharToken
+  ver    Feb 
+   fixed bug in braceCount to eliminate changing count when brace
+    is in a quoted string or comment
+  ver    Feb 
+   fixed bug in eat comment that hung on ending comment with no
+    newline by testing for stream state good
+  ver    Feb 
+   added stream closing to destructor and attach memeber functions
+  ver    Feb 
+   added if test at end of getTok to avoid returning space after 
+    C comment as a token
+  ver    Jan 
+   first release
+
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Tokenizer.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Tokenizer.cpp
+  </Source>
+</Package>

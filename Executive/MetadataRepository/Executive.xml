@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    Executive
+  </Name>
+  <Title>
+    Executive Module that Starts the Analysis & Prints Summay output.	     		  // 																					
+  </Title>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\Executive.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\Executive.cpp
+  </Source>
+  <DepPackage>
+    Package
+  </DepPackage>
+  <DepPackage>
+    Tokenizer
+  </DepPackage>
+  <DepPackage>
+    SemiExpression
+  </DepPackage>
+  <DepPackage>
+    Parser
+  </DepPackage>
+  <DepPackage>
+    ActionsAndRules
+  </DepPackage>
+  <DepPackage>
+    ConfigureParser
+  </DepPackage>
+  <DepPackage>
+    MetadataCreator
+  </DepPackage>
+  <DepPackage>
+    WinTools
+  </DepPackage>
+</Package>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    mnode
+  </Name>
+  <Title>
+    MNodeT class
+  </Title>
+  <Description>
+    Module Operations
+  
+  Provides a templatebased Mary Node class that holds a finite number
+  of child nodes  
+  
+  Required Files
+  
+  MNodeh MNodecpp
+ 
+  Build Process
+  
+  cl DTESTMNODE MNodecpp
+  
+  Maintenance History
+  
+  ver    Feb 
+   first release
+ 
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\MNode.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\MNode.cpp
+  </Source>
+</Package>

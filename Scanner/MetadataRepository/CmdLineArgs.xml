@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    CmdLineArgs
+  </Name>
+  <Title>
+    Store and Validate Command Line Arguments   
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module defines a CmdLineArgs class Its instance will be used to handle
+  command line arguments We need minimum  command line arguments 
+
+  Exactly Once  argv  Recurse Option  r Or nr
+  Exactly Once  argv  File Pattern      Selection criteria to choose file 
+  Atleast Once  argv  Path Spces    Parser  Folder Location 
+ argv     Folder Location 
+ argv     Folder Location 
+ argv     Folder Location 
+ argvN     Folder Location 
+
+ argv To argvN  Folder Path Specifications
+
+  If initial rnr option is ommited we return error message
+
+  If number of command line arguments is   we return error message
+
+  Public Interface
+  
+  
+  CmdLineArgs cla Create Object
+
+  if  claValidateAndStoreArgsargcargv    Validate and Analyze Arguments
+
+  clagetFiles Get vector of files to analyze
+
+  Build Process
+  
+  Required files
+     WinToolshwintoolscpp fileInfoh fileInfocpp
+ StringConversionshStringConversionscppNavhNavcpp
+  Build commands
+     devenv CodeMetricsAnalyzersln rebuild debug
+
+  Maintenance History
+  
+  ver    Feb 
+   changed SemiExpgetSemiExp to SemiExpget
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\CmdLineArgs.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\CmdLineArgs.cpp
+  </Source>
+  <DepPackage>
+    WinTools
+  </DepPackage>
+  <DepPackage>
+    CustomNavigate
+  </DepPackage>
+</Package>

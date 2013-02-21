@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    parser
+  </Name>
+  <Title>
+    Testing
+  </Title>
+  <Description>
+    Parser Description Modified
+  </Description>
+  <Header>
+    Parser.h
+  </Header>
+  <Source>
+    Parser.cpp
+  </Source>
+  <DepPackage>
+    toker
+  </DepPackage>
+  <DepPackage>
+    semi
+  </DepPackage>
+</Package>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    semi
+  </Name>
+  <Title>
+    Package to generate Semi Expression
+  </Title>
+  <Description>
+    Semi package description
+  </Description>
+  <Header>
+    C:\Semi.h
+  </Header>
+  <Source>
+    C:\Semi.cpp
+  </Source>
+  <DepPackage>
+    toker
+  </DepPackage>
+  <DepPackage>
+    testing
+  </DepPackage>
+  <DepPackage>
+    testing2
+  </DepPackage>
+</Package>

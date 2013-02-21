@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    ixmldocument
+  </Name>
+  <Title>
+    IXmlDocumenth  Provides interfaces IXmlDocument IXmlNode         
+  </Title>
+  <Description>
+    Note  Interfaces are bases used in XmlDocumenth and XmlNodeh
+         The factories are defined in XmlDocumentFactoriescpp
+ 
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\IXmlDocument.h
+  </Header>
+  <Source>
+    NA
+  </Source>
+</Package>

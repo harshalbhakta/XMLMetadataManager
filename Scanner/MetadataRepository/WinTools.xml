@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    WinTools
+  </Name>
+  <Title>
+    NA
+  </Title>
+  <Description>
+    Module WinTools Operations
+    
+    This module defines these classes
+     Directory class supports directory management
+      Most functions in this class are static are called using Directory
+     Convert class supports conversion between basic types
+      Now limited to conversions between stdstring and stdwstring
+      All members are static
+     Path class supports manipulation of file and directory paths
+      Most Path functions are static and are called using Path class name
+     SystemError class provides system error reporting
+      The most important member is getLastMsg
+     FileHandler class provides file open close readwrite blocks of bytes
+
+    Public Interface
+    
+    Directory dir
+    dirSetRestorePath
+    dirRestorePath
+    bool ok  DirectoryDirectoryExistspath
+    bool ok  DirectoryCreateDirectorypath
+    bool ok  DirectoryRemoveDirectorypath
+    bool ok  DirectorySetCurrentDirectorypath
+    stdStr path  DirectoryGetCurrentDirectory
+    stdvectorstdStr files  DirectoryGetFilescpp
+    stdvectorstdStr dirs  DirectoryGetDirectories
+
+    stdStr path  PathgetPathfileSpec
+    stdStr path  PathgetFullPathfileSpec
+    stdStr name  PathgetNamefileSpec
+    stdStr path  PathgetPathfileSpec
+    stdStr ext   PathgetExtfileSpec
+
+    FileHandler fh
+    fhOpenFileReaderrpath
+    fhOpenFileWriterwpath
+    const sizet size  
+    byte buffersize
+    sizet numBytesRead  fhgetBlockbuffer bufSize
+    stdOut  fhblockToStringbuffer bufSize
+    sizet numBytesWrit  fhputBlockbuffer bufSize
+    fhCloseFileReader
+    fhCloseFileWriter
+
+    SystemError syserr
+    stdOut  n  last error code    syserrGetLastError
+    stdOut  n  last error    syserrGetLastMsg
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\WinTools.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\WinTools.cpp
+  </Source>
+  <DepPackage>
+    fileInfo
+  </DepPackage>
+  <DepPackage>
+    wintools
+  </DepPackage>
+</Package>

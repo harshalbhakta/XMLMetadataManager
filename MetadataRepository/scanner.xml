@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    scanner
+  </Name>
+  <Title>
+    Scanner class responsible for scanning and displaying dependency
+  </Title>
+  <Description>
+    Module Operations 
+  
+  
+  The XMLMetadata Generated using the MetadataCreator will hold the info
+  about each package dependency The dependency structure of the metadata
+  xml files is such that if we recursively start traversal of metadata from
+  base pacakge we can fetch the entire project dependency
+
+  We supply the base package name as input for Scanning
+
+  Module starts by reading the initial XML File for base package Dependencies
+  for the current module are listed and the dependency packages from the XML 
+  are used to pick up their respective XML and recursively perform the same 
+  action as performed on the base package
+
+  Public Interface
+  
+  
+  ScanPackageRecursePackageName Function call to recursivly traverse metadata
+   starting at the base package
+  GetFiles Function to get the list of all the files traversed
+
+  Build Process
+  
+  Required files
+    
+ Scannerh Scannercpp
+ WinToolsh WinToolscpp FileInfoh FileInfocpp StringConversionshStringConversionscpp
+ XmlDocumenthXmlDocumentcppXmlElementPartshXmlElementPartscppXmlNodesh XmlNodescpp
+ XmlDocumentFactoriesh XmlDocuementFactoriescpp MTreeh MTreecppMNodehMNodecpp
+ itokcollectionh IXmlDocumenth Tokenizerh Tokenizercpp
+
+  Build commands 
+
+     cl EHsc DTESTSCANNER Scannercpp Packagecpp Displaycpp 
+WinToolscpp FileInfocpp XmlDocumentcpp XmlElementPartscpp 
+XmlNodescpp XmlDocumentFactoriescpp MTreecpp MNodecpp Tokenizercpp
+
+  Maintenance History
+  
+  ver    Mar 
+   first release
+
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\Scanner.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\Scanner.cpp
+  </Source>
+  <DepPackage>
+    xmldocument
+  </DepPackage>
+  <DepPackage>
+    xmlelementparts
+  </DepPackage>
+  <DepPackage>
+    wintools
+  </DepPackage>
+  <DepPackage>
+    package
+  </DepPackage>
+  <DepPackage>
+    display
+  </DepPackage>
+</Package>

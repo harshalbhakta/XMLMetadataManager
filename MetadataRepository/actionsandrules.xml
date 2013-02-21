@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    actionsandrules
+  </Name>
+  <Title>
+    ActionsAndRulesh  declares new parsing rules and actions     
+  </Title>
+  <Description>
+    Module Operations 
+  
+  This module defines several action classes  Its classes provide 
+  specialized services needed for specific applications  The modules
+  Parser SemiExpression and Tokenizer are intended to be reusable
+  without change  This module provides a place to put extensions of
+  these facilities and is not expected to be reusable
+
+  Public Interface
+  
+  Toker tsomeFile               create tokenizer instance
+  SemiExp set                  create a SemiExp attached to tokenizer
+  Parser parserse               now we have a parser
+  Rule r                        create instance of a derived Rule class
+  Action a                      create a derived action
+  raddActiona               register action with the rule
+  parseraddRuler             register rule with parser
+  whilesegetSemiExp           get semiexpression
+  parserparse                  and parse it
+
+  Build Process
+  
+  Required files
+      ActionsAndRulesh ActionsAndRulescpp
+  Parserh Parsercpp SemiExpressionh SemiExpressioncpp 
+  tokenizerh tokenizercpp Packageh  Packagecpp
+
+  Build commands
+
+     cl EHsc DTESTACTIONSANDRULES 
+ActionsAndRulescpp Parsercpp SemiExpressioncpp Tokenizercpp Packagecpp
+
+  Maintenance History
+  
+  ver    Mar 
+   Add Custom Rules  Actions for XML Metadata detection
+  ver    Jan 
+   changed to accept a pointer to interfaced ITokCollection instead
+    of a SemiExpression
+  ver    Jan 
+   first release
+
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\ActionsAndRules.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\ActionsAndRules.cpp
+  </Source>
+  <DepPackage>
+    package
+  </DepPackage>
+  <DepPackage>
+    parser
+  </DepPackage>
+  <DepPackage>
+    itokcollection
+  </DepPackage>
+  <DepPackage>
+    tokenizer
+  </DepPackage>
+  <DepPackage>
+    semiexpression
+  </DepPackage>
+</Package>

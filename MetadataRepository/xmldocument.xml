@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    xmldocument
+  </Name>
+  <Title>
+    compiler generated copy and assignment are correct for XmlDocument
+  </Title>
+  <Description>
+    Module Operations 
+  
+  This package provides an XmlDocument class  Its function is to build
+  and internal parse tree representation of an XML document and support
+  loading editing and saving documents
+
+  Build Process
+  
+  Required files
+     XmlDocumenth XmlDocumentcpp XmlElementPartsh XmlElementPartscpp
+      XmlNodesh XmlNodescpp MTreeh MTreecpp Tokenizerh Tokenizercpp
+  Build commands
+     cl EHsc XmlDocumentcpp XmlElementPartscpp XmlNodescpp Tokenizercpp
+
+  Maintenance History
+  
+  ver    Mar  Harshalv
+   Fixed bug to ignore newline formatting before tag 
+    xml version encodingutf 
+stdstring XmlDocumentToStringbool format 
+   Fixed bug to ignore the additional n    
+    appended for formatting
+Modified  void XmlDocumentProcessTextstdstackIXmlNode XmlNodeStack XmlParts parts
+   Fixed bug to handle Single Line Element
+Added  void XmlDocumentProcessSingleLineElementstdstackIXmlNode XmlNodeStack XmlParts parts
+Modified  void XmlDocumentparsePartsstdstackIXmlNode XmlNodeStack XmlParts parts
+  ver    Apr 
+   Extracted IXmlDocument and IXmlNode interfaces supported by changes
+    to the XmlDocument implementation  predominately changing XmlNode to
+    IXmlNode with a few code changes required by that
+   Added tests in the test stub using the new interfaces
+   Minor refactoring of the design
+  ver    Mar 
+   In response to bug reported by Karthick Soundararaj added checks for
+    empty XmlNodeStack before popping and checking top  Bug caused unhandled
+    structured exception for some cases of invalid XML
+   also added attribute check in XmlProcInstrNodeaddAttribue in the
+    XmlNode package
+  ver    Feb 
+   provided enQuote function to prevent tokenizer from rearranging XML
+    text nodes text
+   fixed bug in findelement
+  ver    Feb 
+   made Parse a private function
+   reduced the number of find functions by using an enumeration
+    enum findType  tag attribName attribValue  
+  ver    Feb 
+   first release
+
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\XmlDocument.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\XmlDocument.cpp
+  </Source>
+  <DepPackage>
+    xmlnodes
+  </DepPackage>
+  <DepPackage>
+    mtree
+  </DepPackage>
+  <DepPackage>
+    xmlelementparts
+  </DepPackage>
+  <DepPackage>
+    ixmldocument
+  </DepPackage>
+</Package>

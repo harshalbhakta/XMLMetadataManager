@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    metadatacreator
+  </Name>
+  <Title>
+    MetadataCreatorh  Generate Metadata XM Files               
+  </Title>
+  <Description>
+    Module Operations 
+  
+  
+  This module will be responsible for performing the task related to 
+  generation of XML Files The module will basically operate on 
+  Pacakge objects and based on the data store in the object will 
+  hold various funcitons responsible for generating parts of the 
+  XML file All the task related to the XML Metadata ex Creation 
+  and Modification will be supported by this class
+
+  By default This module overwrites existing files
+
+  Public functions provided for Package name Title Desc Header and 
+  Source to allow user to overwrite specific information of existing files
+
+  Public Interface
+  
+  
+ MetadataCreator                          Construct Object
+     GenerateMetadataFilePackage     Generate XML File using Pacakge Object
+ CreateXMLFilestdstring     Function to generate XML file with empty skelaton
+ AddPackageNamestdstring Function to addedit pacakge name
+ AddTitlestdstringstdstring Function to addedit title text
+ AddDescriptionstdstringstdstring Function to addedit desc text
+ AddHeaderstdstringstdstring Function to addedit header name
+ AddSourcestdstringstdstring Function to addedit source name
+ AddDependencystdstringstdstring Function to add dependency name
+ ShowXMLFilestdstring Function to display generated XML
+ 
+  Build Process
+  
+  Required files
+     Parserh Parsercpp SemiExpressionh SemiExpressioncpp
+      tokenizerh tokenizercpp
+      ActionsAndRulesh ActionsAndRulescpp
+      ConfigureParserh ConfigureParsercpp
+
+  Build commands 
+    
+     cl EHsc DTESTMETADATACREATOR MetadataCreatorcpp Packagecpp  
+WinToolscpp fileInfocpp XmlDocumentcpp XmlElementPartscpp 
+XmlDocumentFactoriescpp XmlNodescpp MNodecpp MTreecpp Tokenizercpp
+
+  Maintenance History
+  
+  ver    Mar 
+   first release
+
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\MetadataCreator.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\MetadataCreator.cpp
+  </Source>
+  <DepPackage>
+    package
+  </DepPackage>
+  <DepPackage>
+    xmldocument
+  </DepPackage>
+  <DepPackage>
+    xmlelementparts
+  </DepPackage>
+  <DepPackage>
+    wintools
+  </DepPackage>
+</Package>

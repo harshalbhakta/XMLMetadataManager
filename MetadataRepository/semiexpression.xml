@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    semiexpression
+  </Name>
+  <Title>
+    SemiExpressionh  Collects tokens for code analysis           
+  </Title>
+  <Description>
+    Module Operations 
+  
+  This module defines a SemiExp class  Its instances build a sequence 
+  of tokens obtained from the Tokenizer module for analysis of code
+  SemiExpressions are lists of tokens that terminate on one of the tokens
+       or n when its line starts with 
+
+  This structure is designed to collect just the right amount of inform
+  ation from a code file for analysis  That is it collects the smallest
+  set of tokens that lead to the detection of grammatical constructs 
+  without having to save part of the sequence for later use or get more
+  to complete the detection process  This simplifies the design of code
+  analysis tools
+
+  Note that assignment and copying of SemiExp instances is supported using
+  the default operations provided by the C language  Copies and assignments
+  result in both source and target SemiExp instances sharing the same toker
+
+  Public Interface
+  
+  Toker t                                   create tokenizer instance
+  SemiExp set                            create instance and attach
+  ifseget                               collect a semiExpression
+    stdcout  seshowSemiExpcstr   show it
+  int n  selength                       number of tokens in se
+  stdstring tok  se  a change      indexed read and write
+  ifsefindaTok  selength          search for a token
+    stdcout  found aTok  
+  seclear                                remove all tokens
+
+  Build Process
+  
+  Required files
+     SemiExpressionh SemiExpressioncpp Tokenizerh Tokenizercpp
+  Build commands either one
+     devenv ProjectHelpSsln
+     cl EHsc DTESTSEMIEXPRESSION SemiExpressioncpp Tokenizercpp 
+         link setargvobj
+
+  Maintenance History
+  
+  ver    Jan 
+   changed SemiExpgetSemiExp to SemiExpget
+   changed SemiExpshowSemiExp to SemiExpshow
+   added scope walker to test stub
+  ver    Feb 
+   fixed bug in SemiExpgetSemiExp that caused failure to return
+    last group of tokens as a semiexpression if the last character
+    in source is not a newline
+  ver    Feb 
+   added an option to return comments as semiexpressions
+   added test isCommentconst stdstring tok
+  ver    Jan 
+   first release
+
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\SemiExpression.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\SemiExpression.cpp
+  </Source>
+  <DepPackage>
+    itokcollection
+  </DepPackage>
+  <DepPackage>
+    tokenizer
+  </DepPackage>
+</Package>

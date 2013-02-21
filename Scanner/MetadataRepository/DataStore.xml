@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    DataStore
+  </Name>
+  <Title>
+    Hold all the Static Data required to be stored for analysis   
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module will define and declare all the static data structure that will be required for analysis
+
+  TypeTable  Key    Fully Qualified Name
+  TypeTable  Value  TypeItem  fileName  package name  lineNumber  
+
+  parsemode  FIRSTPASS   Pass   Functionality to add to TypeTable Enabled in ActionsAndRulescpp
+  parsemode  SECONDPASS  Pass   Functionality to add to TypeTable Disabled in ActionsAndRulescpp
+
+  currentPackageName  Hold the package name of the current package being analyzed
+
+  currentFileName  Hold the file name of the file being analyzed
+
+  currfunctioncyclo  Keep track of Cyclomatic Complexity for current control block
+
+  depthscopenesting  Keep track of Depth Scope Nesting for current file
+
+  currentfilesize  Keep track of number of lines parsed Finally gives line count for file
+
+  namespaceList  List of all the files and namespaces used in the file
+
+  fileSizeList  List of all the files along with the size of each file
+
+  Public Interface
+  
+  
+  Get  Set methods for all static data
+
+  DataStoreaddTypeToTypeTablevariableti
+
+  bool find  DataStorefindKeyInTypeTablevarialbe
+
+
+
+  Build Process
+  
+  Required files
+     DataStorecpp
+  Build commands
+     devenv CodeMetricsAnalyzersln rebuild debug
+
+  Maintenance History
+  
+  ver    Feb 
+ 
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\DataStore.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\DataStore.cpp
+  </Source>
+</Package>

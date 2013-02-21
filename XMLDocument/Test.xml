@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Package name="Parser">
+  <Title>
+    ..\Package to parse files using Toker & Semi.
+  </Title>
+  <Description>
+    Deatils go here.
+  </Description>
+  <Header>
+    Parser.h
+  </Header>
+  <Source>
+    Parser.cpp
+  </Source>
+  <DepPackage>
+    Semi
+  </DepPackage>
+  <DepPackage>
+    Toker
+  </DepPackage>
+</Package>

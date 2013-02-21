@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    ConfigureParser
+  </Name>
+  <Title>
+    Added ConfigParsePassTwo for second pass   
+  </Title>
+  <Description>
+    Module Operations 
+  
+  This module builds and configures parsers  It builds the parser
+  parts and configures them with application specific rules and actions
+  It currently defines two builders one for the first pass and other
+  for the second pass
+  
+
+  Public Interface
+  
+  ConfigParseToAnalyze conConfig
+  conConfigBuild
+  conConfigAttachsomeFileName
+
+  ConfigParsePassTwo conConfig
+  conConfigBuild
+  conConfigAttachsomeFileName
+
+  Build Process
+  
+  Required files
+     ConfigureParserh ConfigureParsercpp Parserh Parsercpp
+      ActionsAndRulesh ActionsAndRulescpp
+      SemiExpressionh SemiExpressioncpp tokenizerh tokenizercpp
+  Build commands either one
+     devenv CodeMetricsAnalyzersln rebuild debug
+
+  Maintenance History
+  
+  ver    Feb 
+   Customized to include ConfigParseToAnalyze  ConfigParsePassTwo
+  ver    Feb 
+   cosmetic changes to ConfigureParsercpp
+  ver    Jan 
+   first release
+
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\ConfigureParser.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\ConfigureParser.cpp
+  </Source>
+  <DepPackage>
+    Parser
+  </DepPackage>
+  <DepPackage>
+    SemiExpression
+  </DepPackage>
+  <DepPackage>
+    Tokenizer
+  </DepPackage>
+  <DepPackage>
+    ActionsAndRules
+  </DepPackage>
+  <DepPackage>
+    ScopeStack
+  </DepPackage>
+</Package>

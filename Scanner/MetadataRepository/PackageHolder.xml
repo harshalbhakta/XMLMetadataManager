@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    PackageHolder
+  </Name>
+  <Title>
+    Class holder to hold multiple packages and perform addupdate operations     
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module holds a map that has the PackageName as the key and Package Object as the item
+
+  This module supports inserting  updating the package information
+
+  map used here will be static and will be shared by the Parser and Display module
+
+  For the parse phase as the files will be parsed and analysed relavent information will be stored in the map
+  This information will be used by the display module to generate meaningful information
+
+  Public Interface
+  
+  
+    addPackagestdstringPackage  Add Package using Pacakge Name as key
+
+  getPackagestdstring Get Package for use based on Package Name
+
+  getFilePackages Get File Packages Pair of  h  cpp file name 
+ 
+  getFunctionListstdstring  Get List of Function Objects in a package
+
+  getPackageToPrintstdstring Get List of Packages to Print
+
+  getControlListstdstring  Get List of Controls to print
+
+  addFunctionToPackagestdstringFunction Add Function Object to list
+
+  addControlToPackagestdstringControl Add Control Object to list
+
+  addUpdateVariableToPackagestdstringstdstring stdstringintstdstringintint Add  Udate Variable Package
+
+  getDepthOfNestingstdstring Get Depth of Nesting for a package
+
+  setDepthOfNestingstdstringint Set the Depth of Nesting for a package
+
+  Build Process
+  
+  Required files
+     Packageh Packagecpp PacakgeHandlercpp
+  Build commands
+     devenv CodeMetricsAnalyzersln rebuild debug
+
+  Maintenance History
+  
+  ver    Feb 
+  
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\PackageHolder.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\PackageHolder.cpp
+  </Source>
+  <DepPackage>
+    Package
+  </DepPackage>
+</Package>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    AnalyzerExecutive
+  </Name>
+  <Title>
+    NA
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module defines a CmdLineArgs class Its instance will be used to handle
+  command line arguments We need minimum  command line arguments 
+
+  Exactly Once  argv  Recurse Option  r Or nr
+  Exactly Once  argv  File Pattern      Selection criteria to choose file 
+  Atleast Once  argv  Path Spces    Parser  Folder Location 
+ argv     Folder Location 
+ argv     Folder Location 
+ argv     Folder Location 
+ argvN     Folder Location 
+
+ argv To argvN  Folder Path Specifications
+
+  If initial rnr option is ommited we return error message
+
+  If number of command line arguments is   we return error message
+
+  Public Interface
+  
+  Toker t                                   create tokenizer instance
+  SemiExp set                            create instance and attach
+  ifseget                               collect a semiExpression
+    stdcout  seshowSemiExpcstr   show it
+  int n  selength                       number of tokens in se
+  stdstring tok  se  a change      indexed read and write
+  ifsefindaTok  selength          search for a token
+    stdcout  found aTok  
+  seclear                                remove all tokens
+
+  Build Process
+  
+  Required files
+     SemiExpressionh SemiExpressioncpp Tokenizerh Tokenizercpp
+  Build commands either one
+     devenv ProjectHelpSsln
+     cl EHsc DTESTSEMIEXPRESSION SemiExpressioncpp Tokenizercpp 
+         link setargvobj
+
+  Maintenance History
+  
+  ver    Jan 
+   changed SemiExpgetSemiExp to SemiExpget
+   changed SemiExpshowSemiExp to SemiExpshow
+   added scope walker to test stub
+  ver    Feb 
+   fixed bug in SemiExpgetSemiExp that caused failure to return
+    last group of tokens as a semiexpression if the last character
+    in source is not a newline
+  ver    Feb 
+   added an option to return comments as semiexpressions
+   added test isCommentconst stdstring tok
+  ver    Jan 
+   first release
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\AnalyzerExecutive.h
+  </Header>
+  <Source>
+    N-A
+  </Source>
+</Package>

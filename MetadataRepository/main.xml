@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    main
+  </Name>
+  <Title>
+    maincpp  Source File to test XML Metadata Manage  Provider of function main      
+  </Title>
+  <Description>
+    Module Operations
+ 
+  main  XMLMetadataManager Application start point
+
+ Build Process
+ 
+ devenv CodeMetricsAnalyzersln rebuild debug
+ 
+ Maintenance History
+ 
+ ver    Feb 
+  Initial Release
+
+  </Description>
+  <Header>
+    NA
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\main.cpp
+  </Source>
+  <DepPackage>
+    cmdlineargs
+  </DepPackage>
+  <DepPackage>
+    executive
+  </DepPackage>
+  <DepPackage>
+    display
+  </DepPackage>
+</Package>

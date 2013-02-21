@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    afxwinforms
+  </Name>
+  <Title>
+    This is a part of the Microsoft Foundation Classes C library
+  </Title>
+  <Description>
+    NA
+  </Description>
+  <Header>
+    C:\Users\HARSHAL\Desktop\workspace\afxwinforms.h
+  </Header>
+  <Source>
+    NA
+  </Source>
+</Package>

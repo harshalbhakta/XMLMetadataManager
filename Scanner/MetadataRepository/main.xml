@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    main
+  </Name>
+  <Title>
+    Source File to test CodeMetricsAnalyzer  Provider of function main   
+  </Title>
+  <Description>
+    Module Operations
+ 
+  main  CodeMetricsAnalyzer Application start point
+  Uses CmdLineArgs to check and store command line arguments 
+  Calls Executive to Analyze files
+  Calls Show to display results
+ Build Process
+ 
+ devenv CodeMetricsAnalyzersln rebuild debug
+ 
+ Requirement Files
+ 
+ CmdLineArgsh
+ CmdLineArgscpp
+ 
+ Maintenance History
+ 
+ ver    Feb 
+  Initial Release
+
+  </Description>
+  <Header>
+    N-A
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\main.cpp
+  </Source>
+  <DepPackage>
+    CmdLineArgs
+  </DepPackage>
+  <DepPackage>
+    Executive
+  </DepPackage>
+  <DepPackage>
+    Show
+  </DepPackage>
+</Package>

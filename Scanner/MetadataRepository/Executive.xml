@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    Executive
+  </Name>
+  <Title>
+    Executive Module that Starts the Analysis  Prints Summay output        
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module acts as the executive controller It fetches the list of the files from 
+  the CmdLineAgrs It further used the ConfigureParser module to parse the files
+  Once the files are parsed Executive controller uses the Display module to display summary 
+  of the analysis
+
+  Works with CmdLineArgs ConfigureParser  Display module for analysis
+
+  Public Interface
+  
+  
+  Executive exstdvectorstdstring 
+
+  exAnalyzeFiles
+
+  Build Process
+  
+  Required files
+     WinToolshDataStorehTokenizerhSemiExpressionh
+  ParserhActionsAndRuleshConfigureParserh
+  ExecutivehDataStoreh Showh
+  Build commands
+     devenv ProjectHelpSsln
+
+  Maintenance History
+  
+  ver    Feb 
+   first release
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Executive.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Executive.cpp
+  </Source>
+  <DepPackage>
+    WinTools
+  </DepPackage>
+  <DepPackage>
+    DataStore
+  </DepPackage>
+  <DepPackage>
+    Tokenizer
+  </DepPackage>
+  <DepPackage>
+    SemiExpression
+  </DepPackage>
+  <DepPackage>
+    Parser
+  </DepPackage>
+  <DepPackage>
+    ActionsAndRules
+  </DepPackage>
+  <DepPackage>
+    ConfigureParser
+  </DepPackage>
+  <DepPackage>
+    Show
+  </DepPackage>
+</Package>

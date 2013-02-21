@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    MetadataCreator
+  </Name>
+  <Title>
+    N-A
+  </Title>
+  <Header>
+    N-A
+  </Header>
+  <Source>
+    N-A
+  </Source>
+  <DepPackage>
+    XmlDocument
+  </DepPackage>
+  <DepPackage>
+    XmlElementParts
+  </DepPackage>
+  <DepPackage>
+    WinTools
+  </DepPackage>
+</Package>

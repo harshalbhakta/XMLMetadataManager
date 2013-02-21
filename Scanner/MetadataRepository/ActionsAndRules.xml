@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    ActionsAndRules
+  </Name>
+  <Title>
+    Added Customized rules for Pass   Pass    
+  </Title>
+  <Description>
+    Module Operations 
+  
+  This module defines several action classes  Its classes provide 
+  specialized services needed for specific applications  The modules
+  Parser SemiExpression and Tokenizer are intended to be reusable
+  without change  This module provides a place to put extensions of
+  these facilities and is not expected to be reusable
+  
+
+  Public Interface
+  
+  Toker tsomeFile               create tokenizer instance
+  SemiExp set                  create a SemiExp attached to tokenizer
+  Parser parserse               now we have a parser
+  Rule r                        create instance of a derived Rule class
+  Action a                      create a derived action
+  raddActiona               register action with the rule
+  parseraddRuler             register rule with parser
+  whilesegetSemiExp           get semiexpression
+  parserparse                  and parse it
+
+  Build Process
+  
+  Required files
+     Parserh Parsercpp ActionsAndRulesh ActionsAndRulescpp
+      SemiExpressionh SemiExpressioncpp tokenizerh tokenizercpp
+  ScopeStackh DataStoreh PackageHolderh ScopeStackcpp
+  DataStorecpp PackageHoldercpp 
+  Build commands either one
+     devenv CodeMetricsAnalyzersln rebuild debug
+
+  Maintenance History
+  
+  ver    Feb 
+   Add Custom Rules  Actions for Pass   Pass 
+  ver    Jan 
+   changed to accept a pointer to interfaced ITokCollection instead
+    of a SemiExpression
+  ver    Jan 
+   first release
+
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\ActionsAndRules.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\ActionsAndRules.cpp
+  </Source>
+  <DepPackage>
+    Parser
+  </DepPackage>
+  <DepPackage>
+    ITokCollection
+  </DepPackage>
+  <DepPackage>
+    ScopeStack
+  </DepPackage>
+  <DepPackage>
+    DataStore
+  </DepPackage>
+  <DepPackage>
+    PackageHolder
+  </DepPackage>
+  <DepPackage>
+    Tokenizer
+  </DepPackage>
+  <DepPackage>
+    SemiExpression
+  </DepPackage>
+</Package>

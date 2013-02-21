@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    parser
+  </Name>
+  <Title>
+    Parserh  Analyzes C language constructs                    
+  </Title>
+  <Description>
+    Module Operations 
+  
+  This module defines a Parser class  Its instances collect 
+  semiexpressions from a file for analysis  Analysis consists of
+  applying a set of rules to the semiexpression and for each rule
+  that matches a set of actions is invoked
+
+  Public Interface
+  
+  Toker tsomeFile               create tokenizer instance
+  SemiExp set                  create a SemiExp attached to tokenizer
+  Parser parserse               now we have a parser
+  Rule r                        create instance of a derived Rule class
+  Action a                      create a derived action
+  raddActiona               register action with the rule
+  parseraddRuler             register rule with parser
+  whilesegetSemiExp           get semiexpression
+    parserparse                  and parse it
+
+  Build Process
+  
+  Required files
+     Parserh Parsercpp SemiExpressionh SemiExpressioncpp
+      tokenizerh tokenizercpp
+      ActionsAndRulesh ActionsAndRulescpp
+      ConfigureParserh ConfigureParsercpp
+  Build commands either one
+     devenv Parsersln
+     cl EHsc DTESTPARSER parsercpp semiexpressioncpp tokenizercpp 
+         ActionsAndRulescpp ConfigureParsercpp link setargvobj
+
+  Maintenance History
+  
+  ver    Jan 
+   modified to accept pointer to interface ITokCollection instead of
+    SemiExpression
+  ver    Sep 
+   cosmetic modifications to comments on this page
+  ver    Jan 
+   first release
+
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\Parser.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\Parser.cpp
+  </Source>
+  <DepPackage>
+    itokcollection
+  </DepPackage>
+  <DepPackage>
+    tokenizer
+  </DepPackage>
+  <DepPackage>
+    semiexpression
+  </DepPackage>
+  <DepPackage>
+    actionsandrules
+  </DepPackage>
+  <DepPackage>
+    configureparser
+  </DepPackage>
+  <DepPackage>
+    testpackge
+  </DepPackage>
+</Package>

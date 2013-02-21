@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    Nav
+  </Name>
+  <Title>
+    NA
+  </Title>
+  <Description>
+    NA
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Nav.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Nav.cpp
+  </Source>
+  <DepPackage>
+    StringConversion
+  </DepPackage>
+  <DepPackage>
+    fileInfo
+  </DepPackage>
+  <DepPackage>
+    nav
+  </DepPackage>
+  <DepPackage>
+    wintools
+  </DepPackage>
+  <DepPackage>
+    conio
+  </DepPackage>
+</Package>

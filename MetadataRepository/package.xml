@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    package
+  </Name>
+  <Title>
+    Packageh ver     Class to hold information about each package  h  cpp  file      
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module defines a Package class that will hold the information related to each package
+
+  Information to be held  
+   Package Name
+   Header File
+   Source File
+   List of Dependencies
+
+  Above mentioned data will be held for a package which involves  h  cpp 
+
+  Object of Package class will be used to basically gather and print the information for a package
+
+  Public Interface
+  
+  
+Package pkParser    Create object with Package Name as Constructor Argument
+pksetSourceParsercpp    Set Source File 
+pksetHeaderParserh    Set Header File
+pksetTitleModule to parse files    Set Title for the package Overwrite only if NA
+pksetDescriptionModule Description   Set Description for the package Overwrite only if NA
+pksetTitleForceModule to parse file  Set Title for the package Overwrite for all cases
+pksetDescriptionForceModule Desc     Set Description for the package  Overwrite for all cases
+pkaddDependencyToker    Add Depdendency
+pkaddDependencySemi    Add another dependency
+pkgetPackageName    Get Pacakge Name
+pkgetHeader                             Get Header Name
+pkgetSource    Get Source Name
+pkgetTitle    Get Title Text
+pkgetDescription    Get vector of dependency files
+
+  Build Process
+  
+  
+  Required files
+     Packageh Packagecpp
+  
+  Build commands
+     cl EHsc DTESTPACKAGE Packagecpp
+
+  Maintenance History
+  
+  ver    Mar 
+  
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\Package.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\Package.cpp
+  </Source>
+  <DepPackage>
+    testingpackage1
+  </DepPackage>
+  <DepPackage>
+    testingpackage2
+  </DepPackage>
+</Package>

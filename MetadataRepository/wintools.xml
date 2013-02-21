@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    wintools
+  </Name>
+  <Title>
+    wintoolsh    Win APIbased helper functions                  
+  </Title>
+  <Description/>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\WinTools.H
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\WinTools.cpp
+  </Source>
+  <DepPackage>
+    fileinfo
+  </DepPackage>
+</Package>

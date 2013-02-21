@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    display
+  </Name>
+  <Title>
+    Repository Location for Scanning Files
+  </Title>
+  <Description/>
+  <Header>
+    NA
+  </Header>
+  <Source>
+    NA
+  </Source>
+  <DepPackage>
+    package
+  </DepPackage>
+  <DepPackage>
+    wintools
+  </DepPackage>
+</Package>

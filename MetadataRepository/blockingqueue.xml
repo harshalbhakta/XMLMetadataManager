@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    blockingqueue
+  </Name>
+  <Title>
+    blockingQueuecpp  queue that blocks on deQ of empty queue    
+  </Title>
+  <Description/>
+  <Header>
+    C:\Users\HARSHAL\Desktop\PF\TestFiles\BlockingQueueTESTING_REQUIRED\BlockingQueue.h
+  </Header>
+  <Source>
+    C:\Users\HARSHAL\Desktop\PF\TestFiles\BlockingQueueTESTING_REQUIRED\BlockingQueue.cpp
+  </Source>
+  <DepPackage>
+    locks
+  </DepPackage>
+  <DepPackage>
+    threads
+  </DepPackage>
+</Package>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    itokcollection
+  </Name>
+  <Title>
+    ITokCollectionh  package for the ITokCollection interface    
+  </Title>
+  <Description>
+    Module Purpose
+  
+  ITokCollection is an interface that supports substitution of different
+  types of scanners for parsing  In this solution we illustrate that
+  by binding two different types of collections SemiExp and XmlParts
+  to this interface  This is illustrated in the test stubs for the
+  SemiExpression and XmlElementParts modules
+
+  Note that we only use the SemiExpression collector in the parser and
+  all of the higher level executives  We certainly could bind the 
+  XmlParts class to parsers ITokCollector pointer but didnt due to
+  lack of time
+
+  Maintenance History
+  
+  ver    Jan 
+   first release
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\itokcollection.h
+  </Header>
+  <Source>
+    NA
+  </Source>
+</Package>

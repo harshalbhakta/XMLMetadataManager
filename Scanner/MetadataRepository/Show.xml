@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    Show
+  </Name>
+  <Title>
+    Module to display analysis results   
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module is responsible for displaying the results for the analysis
+
+  Public Interface
+  
+  
+  printFunctionsPackage  Print statistics related to functions
+
+  printControlsPackage  Print statistics related to Controls
+
+  printVariablesPackage  Print statistics related to Variables
+
+  printSummaryPackage  Print summary statistics
+
+  Build Process
+  
+  Required files
+     PackageHolderh  Packageh  PackageHoldercpp  Packagecpp
+  Build commands
+     devenv CodeMetricsAnalyzersln rebuild debug
+
+  Maintenance History
+  
+  ver    Feb 
+ 
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Show.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Show.cpp
+  </Source>
+  <DepPackage>
+    PackageHolder
+  </DepPackage>
+  <DepPackage>
+    Package
+  </DepPackage>
+</Package>

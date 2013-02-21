@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    mtree
+  </Name>
+  <Title>
+    void MTreeNodedeletewalkNode pStart
+  </Title>
+  <Description>
+    Module Operations
+  
+  Provides an MTree class that holds a finite number of MNodes and
+  and supports visitation of each node using depth first search  
+  
+  Required Files
+  
+  MTreeh MTreecpp MNodesh MNodecpp
+ 
+  Build Process
+  
+  cl DTESTMTREE MTreecpp MNodecpp
+  
+  Maintenance History
+  
+  ver    Mar 
+   fixed memory leak in MTreeNodefinder
+  ver    Feb 
+   converted all test stub testing to use MNodeT
+   added public definitions for copy construction and assignment
+   fixed bug in searching by changing return type of walk to bool
+    and returning as soon as a find happens
+  ver    Jan 
+   removed vector scaffolding now create test nodes on heap
+  ver    Jan 
+   added private declarations for copy and assignment
+    to prevent compiler from generating incorrect versions
+  ver    Jan 
+   first release
+ 
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\MTree.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\MTree.cpp
+  </Source>
+  <DepPackage>
+    mnode
+  </DepPackage>
+</Package>

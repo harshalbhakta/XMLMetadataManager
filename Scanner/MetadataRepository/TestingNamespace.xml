@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    TestingNamespace
+  </Name>
+  <Title>
+    TEst file to test is namespace detection works   
+  </Title>
+  <Description>
+    NA
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\TestingNamespace.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\TestingNamespace.cpp
+  </Source>
+</Package>

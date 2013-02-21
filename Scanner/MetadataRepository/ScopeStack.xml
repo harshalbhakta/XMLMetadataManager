@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    ScopeStack
+  </Name>
+  <Title>
+    Added the ScopeElement Struct for holing  values   
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module defines a a ScopeStack that will hold a String and a ScopeElement Basic functionalities 
+  related to a stack are supported Push  Pop Stack will be static as it has to be shared accross program
+
+  Public Interface
+  
+  stdpairstdstring ScopeElement item Access Stack
+
+  itemfirst  Function Add First String
+  itemsecondname  AddConfigureParser Scope Element  First
+  itemsecondlineNumber   Scope Element  Second
+  stackpushitem
+
+  showStackstdstring ScopeElementfalse Show Stack
+
+  stackpop Pop Stack
+
+  popfromstackint   Pop element from the stack Current line number is the input
+
+  recursivepopint   Recursively pop element from stack based on scope
+
+  pushstdstring stdstring int   Push element to stack
+ 
+  stdstring getCurrentScope  Get Current Scope
+
+  Build Process
+  
+  Required files
+     ScopeStackcpp
+  Build commands
+     devenv CodeMetricsAnalyzersln rebuild debug
+
+  Maintenance History
+  
+  ver    Feb 
+   Added Scope Element to hold  values
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\ScopeStack.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\ScopeStack.cpp
+  </Source>
+  <DepPackage>
+    DataStore
+  </DepPackage>
+  <DepPackage>
+    PackageHolder
+  </DepPackage>
+</Package>

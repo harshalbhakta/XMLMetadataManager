@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    handler_stdafx
+  </Name>
+  <Title>
+    stdafxcpp  source file that includes just the standard includes
+  </Title>
+  <Description>
+    NA
+  </Description>
+  <Header>
+    NA
+  </Header>
+  <Source>
+    C:\Users\HARSHAL\Desktop\workspace\handler_stdafx.cpp
+  </Source>
+  <DepPackage>
+    stdafx
+  </DepPackage>
+</Package>

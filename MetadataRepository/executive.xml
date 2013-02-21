@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    executive
+  </Name>
+  <Title>
+    Executiveh ver     Executive Module that Starts the Analysis  Prints Summay output           
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module acts as the executive controller It fetches the list of the files from 
+  the CmdLineAgrs It further uses the ConfigureParser module to parse the files Once the parsing is 
+  done the module uses the MetadataCreator module to generate the XML Files The module also uses the scanner
+  module to scan the files if the command line arguments indicate to do so
+
+  Works with CmdLineArgs ConfigureParser  Display module for analysis
+
+  Public Interface
+  
+  
+  Executive   Create Object
+  AnalyzeFilesstdvectorstdstring   Function to analyze the files and generate Metadata
+  ScanMetadatastdstring   Funciton to start scanning using a base package
+  AddDependencyToMetadatastringvectorstring  Function to add dependency to a existing file
+
+  Build Process
+  
+  Required files
+     WinToolshDataStorehTokenizerhSemiExpressionh
+  ParserhActionsAndRuleshConfigureParserh
+  ExecutivehDataStoreh Showh
+  
+  Build commands
+    
+ cl EHsc DTESTEXECUTIVE Executivecpp ConfigureParsercpp parsercpp WinToolscpp 
+semiexpressioncpp tokenizercpp ActionsAndRulescpp Packagecpp MetadataCreatorcpp Displaycpp 
+Scannercpp fileInfocpp XmlDocumentcpp XmlElementPartscpp XmlDocumentFactoriescpp XmlNodescpp MNodecpp MTreecpp
+
+  Maintenance History
+  
+  ver    Feb 
+   first release
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\Executive.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\Executive.cpp
+  </Source>
+  <DepPackage>
+    package
+  </DepPackage>
+  <DepPackage>
+    tokenizer
+  </DepPackage>
+  <DepPackage>
+    semiexpression
+  </DepPackage>
+  <DepPackage>
+    parser
+  </DepPackage>
+  <DepPackage>
+    actionsandrules
+  </DepPackage>
+  <DepPackage>
+    configureparser
+  </DepPackage>
+  <DepPackage>
+    metadatacreator
+  </DepPackage>
+  <DepPackage>
+    wintools
+  </DepPackage>
+  <DepPackage>
+    scanner
+  </DepPackage>
+</Package>

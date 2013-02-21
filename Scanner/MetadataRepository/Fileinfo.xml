@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    Fileinfo
+  </Name>
+  <Title>
+    NA
+  </Title>
+  <Description>
+    NA
+  </Description>
+  <Header>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Fileinfo.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\CodeMetricsAnalyzer\Fileinfo.cpp
+  </Source>
+  <DepPackage>
+    StringConversion
+  </DepPackage>
+  <DepPackage>
+    fileInfo
+  </DepPackage>
+</Package>

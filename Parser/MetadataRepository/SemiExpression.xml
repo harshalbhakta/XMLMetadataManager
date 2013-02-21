@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    SemiExpression
+  </Name>
+  <Title>
+    N-A
+  </Title>
+  <Header>
+    N-A
+  </Header>
+  <Source>
+    N-A
+  </Source>
+  <DepPackage>
+    ITokCollection
+  </DepPackage>
+  <DepPackage>
+    tokenizer
+  </DepPackage>
+</Package>

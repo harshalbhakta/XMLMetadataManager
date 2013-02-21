@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    xmldocumentfactories
+  </Name>
+  <Title>
+    XmlDocumentFactoriescpp                                            
+  </Title>
+  <Description>
+    NA
+  </Description>
+  <Header>
+    NA
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\XmlDocumentFactories.cpp
+  </Source>
+  <DepPackage>
+    xmlnodes
+  </DepPackage>
+  <DepPackage>
+    xmldocument
+  </DepPackage>
+</Package>

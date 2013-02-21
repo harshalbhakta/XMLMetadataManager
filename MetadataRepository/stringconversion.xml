@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    stringconversion
+  </Name>
+  <Title>
+    cl EHsc DTESTSTRINGCONVERSION StringConversioncpp  
+  </Title>
+  <Description/>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\StringConversion.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\StringConversion.cpp
+  </Source>
+</Package>

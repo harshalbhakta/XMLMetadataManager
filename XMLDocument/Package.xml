@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    Package
+  </Name>
+  <Title>
+    Class to hold information about each package ( .h + .cpp ) file.				  // 																					
+  </Title>
+  <Description>
+    N-A
+  </Description>
+  <Header>
+    N-A
+  </Header>
+  <Source>
+    N-A
+  </Source>
+</Package>

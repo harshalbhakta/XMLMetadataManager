@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Package>
+  <Name>
+    customnavigate
+  </Name>
+  <Title>
+    CustomNavigateh ver     Module to parse the directory and fetch files based on cmd arguments      
+  </Title>
+  <Description>
+    Module Operations 
+  
+
+  This module takes the Directory PathFile Pattern and recurse flag as input Based on the input arguments 
+  provided this module traveses through the Directory Structure recursively or non  recursively Files are 
+  picked up from the directories while traversing based on the file patter taken as input
+
+   Directory Path  Path of the directory to start fetching files from
+   Recurse  Option to allow recursvie  nonrecuresive traversal
+   Multiple File Patterns  Option to fetch files using multiple file patterns
+
+  Public Interface
+  
+  
+  CustomNavigate cn   Create Object
+  cngetFilesDirsPathFilePatternRecurse   Function to return only valid files based path pattern  recurse
+  cnprintFileInfo   Print the Invalid Directory  Files Ignored Repeated Filename
+
+  Build Process
+  
+  
+  Required files
+
+     CustomNavigateh CustomNavigatecpp
+     WinToolshwintoolscpp fileInfoh fileInfocpp
+ StringConversionshStringConversionscpp
+  
+  Build commands  Can be used directly copying from here 
+
+     cl EHsc DTESTCUSTOMNAVIGATE CustomNavigatecpp 
+WinToolscpp fileInfocpp StringConversioncpp
+ 
+  Maintenance History
+  
+  ver    Mar 
+
+  </Description>
+  <Header>
+    C:\Harshal\OOD\XMLMetadataManager\CustomNavigate.h
+  </Header>
+  <Source>
+    C:\Harshal\OOD\XMLMetadataManager\CustomNavigate.cpp
+  </Source>
+  <DepPackage>
+    wintools
+  </DepPackage>
+</Package>
